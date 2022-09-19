@@ -1,0 +1,730 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>JVM 虚拟机 TODO · 极客时间Java高级工程师体系课笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="lishaofei">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-cuav-chapters/cuav-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-fexa/fexa.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="concurrent.html" />
+    
+    
+    <link rel="prev" href="pref.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+	<div class="header-inner">
+		<!-- LOGO -->
+		<div class="logo"></div>
+		<span class="title"></span>
+
+		<!-- Search -->
+		
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+
+		<!-- Nav -->
+		<ul class="header-nav">
+			
+		</ul>
+	</div>
+
+	<div class="book-summary">
+		<div class="book-summary-title">文档目录</div>
+		
+		
+		<nav role="navigation">
+			
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    大纲
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                        <b>1.2.</b>
+                    
+                    笔记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="pref.html">
+            
+                <a href="pref.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    项目性能优化 TODO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="jvm.html">
+            
+                <a href="jvm.html">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    JVM 虚拟机 TODO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="concurrent.html">
+            
+                <a href="concurrent.html">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    多线程与并发编程 TODO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="socket.html">
+            
+                <a href="socket.html">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    网络编程 TODO
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                        <b>1.3.</b>
+                    
+                    作业
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../00-homework/pref-task.html">
+            
+                <a href="../00-homework/pref-task.html">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    项目性能优化 TODO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../00-homework/jvm-task.html">
+            
+                <a href="../00-homework/jvm-task.html">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    JVM 虚拟机 TODO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../00-homework/concurrent-task.md">
+            
+                <span>
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    多线程与并发编程 TODO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../00-homework/socket-task.md">
+            
+                <span>
+            
+                    
+                        <b>1.3.4.</b>
+                    
+                    网络编程 TODO
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+		</nav>
+		
+		
+	</div>
+
+	<!-- Content nav -->
+	<div class="book-anchor">
+		<div class="book-anchor-title">在这篇文章中:</div>
+		<div class="book-anchor-body">
+
+		</div>
+	</div>
+
+	<div class="book-body">
+		
+		<div class="body-inner">
+			
+			
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >JVM 虚拟机 TODO</a>
+    </h1>
+</div>
+
+
+
+
+			<div class="page-wrapper" tabindex="-1" role="main">
+				<div class="page-inner">
+					
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+					<section class="normal markdown-section">
+						
+						<h2 id="jvm-&#x865A;&#x62DF;&#x673A;"><a name="jvm-&#x865A;&#x62DF;&#x673A;" class="plugin-anchor" href="#jvm-&#x865A;&#x62DF;&#x673A;"><i class="fa fa-link" aria-hidden="true"></i></a>JVM &#x865A;&#x62DF;&#x673A;</h2>
+<blockquote>
+<p><strong>&#x5B66;&#x4E60; JVM &#x7684;&#x8DEF;&#x5F84;</strong></p>
+<p>JVM &#x57FA;&#x672C;&#x5E38;&#x8BC6; -&gt; &#x7C7B;&#x52A0;&#x8F7D;&#x5B50;&#x7CFB;&#x7EDF; -&gt; &#x8FD0;&#x884C;&#x65F6;&#x6570;&#x636E;&#x533A; -&gt; &#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x4E00;&#x751F; -&gt; GC &#x6536;&#x96C6;&#x5668; -&gt; &#x8C03;&#x4F18;&#x5B9E;&#x6218;</p>
+</blockquote>
+<h3 id="1-jvm-&#x57FA;&#x672C;&#x5E38;&#x8BC6;"><a name="1-jvm-&#x57FA;&#x672C;&#x5E38;&#x8BC6;" class="plugin-anchor" href="#1-jvm-&#x57FA;&#x672C;&#x5E38;&#x8BC6;"><i class="fa fa-link" aria-hidden="true"></i></a>1. JVM &#x57FA;&#x672C;&#x5E38;&#x8BC6;</h3>
+<ul>
+<li>&#x5E7F;&#x4E49;&#x4E0A;&#x6307;&#x7684;&#x662F;&#x4E00;&#x79CD;&#x89C4;&#x8303;</li>
+<li>&#x72ED;&#x4E49;&#x4E0A;&#x662F; JDK &#x4E2D;&#x7684; JVM &#x865A;&#x62DF;&#x673A;</li>
+<li><p>JVM&#x7684;&#x5B9E;&#x73B0;&#x662F;&#x7531;&#x5404;&#x4E2A;&#x5382;&#x5546;&#x6765;&#x505A;&#x7684;&#xFF0C;&#x6BD4;&#x5982;&#x73B0;&#x5728;&#x6D41;&#x4F20;&#x6700;&#x5E7F;&#x6CDB;&#x7684;&#x662F;hotspot</p>
+</li>
+<li><p>&#x5404;&#x79CD;&#x786C;&#x4EF6;&#x5E73;&#x53F0;&#x4E0A;&#x7684; Java &#x865A;&#x62DF;&#x673A;&#x5B9E;&#x73B0;</p>
+</li>
+<li><p>JVM &#x67B6;&#x6784;&#x56FE;</p>
+</li>
+</ul>
+<p><img src="assets/image-20220912104902085.png" alt="image-20220912104902085"></p>
+<ul>
+<li><p>Java &#x548C; JVM &#x7684;&#x5173;&#x7CFB;</p>
+<p><img src="assets/image-20220912104950590.png" alt="image-20220912104902085"></p>
+</li>
+</ul>
+<h3 id="2-&#x7C7B;&#x52A0;&#x8F7D;&#x5B50;&#x7CFB;&#x7EDF;"><a name="2-&#x7C7B;&#x52A0;&#x8F7D;&#x5B50;&#x7CFB;&#x7EDF;" class="plugin-anchor" href="#2-&#x7C7B;&#x52A0;&#x8F7D;&#x5B50;&#x7CFB;&#x7EDF;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x7C7B;&#x52A0;&#x8F7D;&#x5B50;&#x7CFB;&#x7EDF;</h3>
+<blockquote>
+<p>JVM &#x7684;&#x7C7B;&#x52A0;&#x8F7D;&#x662F;&#x901A;&#x8FC7; ClassLoader &#x53CA;&#x5176;&#x5B50;&#x7C7B;&#x6765;&#x5B8C;&#x6210;&#x7684;</p>
+</blockquote>
+<h4 id="21-&#x7C7B;&#x52A0;&#x8F7D;&#x5668;"><a name="21-&#x7C7B;&#x52A0;&#x8F7D;&#x5668;" class="plugin-anchor" href="#21-&#x7C7B;&#x52A0;&#x8F7D;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1 &#x7C7B;&#x52A0;&#x8F7D;&#x5668;</h4>
+<p><img src="assets/image-20220912120151822.png" alt="image-20220912120151822"></p>
+<ol>
+<li><p><strong>Bootstrap ClassLoader &#x542F;&#x52A8;&#x7C7B;&#x52A0;&#x8F7D;&#x5668;</strong></p>
+<ul>
+<li><p>&#x8D1F;&#x8D23;&#x52A0;&#x8F7D; JAVA_HOME\lib &#x76EE;&#x5F55;&#x4E2D;&#x7684;&#xFF0C;&#x6216;&#x901A;&#x8FC7;-Xbootclasspath&#x53C2;&#x6570;&#x6307;&#x5B9A;&#x8DEF;&#x5F84;&#x4E2D;&#x7684;&#xFF0C;&#x4E14;&#x88AB;&#x865A;&#x62DF;&#x673A;&#x8BA4;&#x53EF;(&#x6309;&#x6587;&#x4EF6;&#x540D;&#x8BC6;&#x522B;&#xFF0C;&#x5982;rt.jar)&#x7684;&#x7C7B;</p>
+</li>
+<li><p>&#x7531;C++&#x5B9E;&#x73B0;&#xFF0C;&#x4E0D;&#x662F;ClassLoader&#x7684;&#x5B50;&#x7C7B;</p>
+</li>
+</ul>
+</li>
+<li><p><strong>Extension ClassLoader &#x6269;&#x5C55;&#x7C7B;&#x52A0;&#x8F7D;&#x5668;</strong></p>
+<ul>
+<li>&#x8D1F;&#x8D23;&#x52A0;&#x8F7D; JAVA_HOME\lib\ext &#x76EE;&#x5F55;&#x4E2D;&#x7684;&#xFF0C;&#x6216;&#x901A;&#x8FC7;java.ext.dirs&#x7CFB;&#x7EDF;&#x53D8;&#x91CF;&#x6307;&#x5B9A;&#x8DEF;&#x5F84;&#x4E2D;&#x7684;&#x7C7B;&#x5E93;</li>
+</ul>
+</li>
+<li><p><strong>Application ClassLoader &#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7C7B;&#x52A0;&#x8F7D;&#x5668;</strong></p>
+<ul>
+<li>&#x8D1F;&#x8D23;&#x52A0;&#x8F7D;&#x7528;&#x6237;&#x8DEF;&#x5F84;(classpath)&#x4E0A;&#x7684;&#x7C7B;&#x5E93;</li>
+</ul>
+</li>
+<li><p><strong>User ClassLoader &#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#x52A0;&#x8F7D;&#x5668;</strong></p>
+<ul>
+<li><p>&#x52A0;&#x8F7D;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E4B;&#x5916;&#x7684;&#x7C7B;&#x6587;&#x4EF6;</p>
+</li>
+<li><p>&#x5728;&#x6C7D;&#x8F66;&#x884C;&#x9A76;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E3A;&#x6C7D;&#x8F66;&#x66F4;&#x6362;&#x8F6E;&#x5B50;</p>
+</li>
+<li><p>&#x4F8B;&#x5982;&#xFF1A;<a href="https://www.jrebel.com/" target="_blank">JRebel</a></p>
+</li>
+</ul>
+</li>
+</ol>
+<p><img src="assets/image-20220912212222196.png" alt="image-20220912212222196"></p>
+<ul>
+<li><p>&#x81EA;&#x5E95;&#x5411;&#x4E0A;&#x68C0;&#x67E5;&#x7C7B;&#x662F;&#x5426;&#x88AB;&#x52A0;&#x8F7D;&#xFF0C;&#x53EA;&#x8981;&#x67D0;&#x4E2A;classloader&#x5DF2;&#x52A0;&#x8F7D;&#x5C31;&#x89C6;&#x4E3A;&#x5DF2;&#x52A0;&#x8F7D;&#x6B64;&#x7C7B;&#xFF0C;&#x4FDD;&#x8BC1;&#x6B64;&#x7C7B;&#x53EA;&#x6240;&#x6709;ClassLoader&#x52A0;&#x8F7D;&#x4E00;&#x6B21;</p>
+</li>
+<li><p>&#x81EA;&#x5B9A;&#x5411;&#x4E0B;&#x6267;&#x884C;&#x52A0;&#x8F7D;&#xFF0C;&#x7531;&#x4E0A;&#x5C42;&#x6765;&#x9010;&#x5C42;&#x5C1D;&#x8BD5;&#x52A0;&#x8F7D;&#x6B64;&#x7C7B;&#xFF0C;&#x9632;&#x7BE1;&#x6539;</p>
+</li>
+</ul>
+<h4 id="22-&#x7C7B;&#x52A0;&#x8F7D;&#x7684;&#x9014;&#x5F84;"><a name="22-&#x7C7B;&#x52A0;&#x8F7D;&#x7684;&#x9014;&#x5F84;" class="plugin-anchor" href="#22-&#x7C7B;&#x52A0;&#x8F7D;&#x7684;&#x9014;&#x5F84;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2 &#x7C7B;&#x52A0;&#x8F7D;&#x7684;&#x9014;&#x5F84;</h4>
+<ul>
+<li>jar/war</li>
+<li>jsp &#x751F;&#x6210;&#x7684; class</li>
+<li>&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x5B57;&#x8282;&#x6D41;</li>
+<li>&#x7F51;&#x7EDC;&#x4E2D;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x5B57;&#x8282;&#x6D41;</li>
+<li>&#x52A8;&#x6001;&#x4EE3;&#x7406;&#x751F;&#x6210;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x5B57;&#x8282;&#x6D41;</li>
+</ul>
+<h4 id="24-&#x7C7B;&#x52A0;&#x8F7D;&#x7684;&#x65F6;&#x673A;"><a name="24-&#x7C7B;&#x52A0;&#x8F7D;&#x7684;&#x65F6;&#x673A;" class="plugin-anchor" href="#24-&#x7C7B;&#x52A0;&#x8F7D;&#x7684;&#x65F6;&#x673A;"><i class="fa fa-link" aria-hidden="true"></i></a>2.4 &#x7C7B;&#x52A0;&#x8F7D;&#x7684;&#x65F6;&#x673A;</h4>
+<ul>
+<li><p>&#x9047;&#x5230; new &#x3001; getstatic &#x3001; putstatic &#x548C;invokestatic &#x8FD9;&#x56DB;&#x6761;&#x6307;&#x4EE4;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x5BF9;&#x5E94;&#x7684;&#x7C7B;&#x6CA1;&#x6709;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x5219;&#x8981;&#x5BF9;&#x5BF9;&#x5E94;&#x7684;&#x7C7B;&#x5148;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Student</span><span class="token punctuation">{</span>
+    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">int</span> age <span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">method</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//Student.age</span>
+<span class="token comment">//Student.method();</span>
+<span class="token comment">//new Student();</span>
+</code></pre>
+</li>
+<li><p>&#x4F7F;&#x7528; java.lang.reflect &#x5305;&#x65B9;&#x6CD5;&#x65F6;&#x5BF9;&#x7C7B;&#x8FDB;&#x884C;&#x53CD;&#x5C04;&#x8C03;&#x7528;&#x7684;&#x65F6;&#x5019;</p>
+<pre class="language-"><code class="lang-java"><span class="token class-name">Class</span> c <span class="token operator">=</span> <span class="token class-name">Class</span><span class="token punctuation">.</span><span class="token function">forname</span><span class="token punctuation">(</span><span class="token string">&quot;com.hero.Student&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+</li>
+<li><p>&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x7C7B;&#x7684;&#x65F6;&#x5019;&#x53D1;&#x73B0;&#x5176;&#x7236;&#x7C7B;&#x8FD8;&#x6CA1;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x8981;&#x5148;&#x521D;&#x59CB;&#x5316;&#x5176;&#x7236;&#x7C7B;</p>
+</li>
+<li><p>&#x5F53;&#x865A;&#x62DF;&#x673A;&#x5F00;&#x59CB;&#x542F;&#x52A8;&#x65F6;&#xFF0C;&#x7528;&#x6237;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x4E3B;&#x7C7B;(main)&#xFF0C;&#x865A;&#x62DF;&#x673A;&#x4F1A;&#x5148;&#x6267;&#x884C;&#x8FD9;&#x4E2A;&#x4E3B;&#x7C7B;&#x7684;&#x521D;&#x59CB;&#x5316;</p>
+</li>
+</ul>
+<h4 id="25-&#x7C7B;&#x52A0;&#x8F7D;&#x7684;&#x8FC7;&#x7A0B;"><a name="25-&#x7C7B;&#x52A0;&#x8F7D;&#x7684;&#x8FC7;&#x7A0B;" class="plugin-anchor" href="#25-&#x7C7B;&#x52A0;&#x8F7D;&#x7684;&#x8FC7;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>2.5 &#x7C7B;&#x52A0;&#x8F7D;&#x7684;&#x8FC7;&#x7A0B;</h4>
+<p><img src="assets/image-20220912212700133.png" alt="image-20220912212700133"></p>
+<ul>
+<li>&#x5168;&#x9650;&#x5B9A;&#x540D;&#x79F0; -&gt; &#x4E8C;&#x8FDB;&#x5236;&#x5B57;&#x8282;&#x6D41;&#x52A0;&#x8F7D; class &#x6587;&#x4EF6;</li>
+<li>&#x5B57;&#x8282;&#x6D41;&#x7684;&#x9759;&#x6001;&#x6570;&#x636E;&#x7ED3;&#x6784; -&gt; &#x65B9;&#x6CD5;&#x533A;&#x7684;&#x8FD0;&#x884C;&#x65F6;&#x6570;&#x636E;&#x7ED3;&#x6784;</li>
+<li>&#x521B;&#x5EFA;&#x5B57;&#x8282;&#x7801; Class &#x5BF9;&#x8C61;</li>
+</ul>
+<p><img src="assets/image-20220912212735557.png" alt="image-20220912212735557"></p>
+<h4 id="26-&#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#x52A0;&#x8F7D;&#x5668;&#x6848;&#x4F8B;"><a name="26-&#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#x52A0;&#x8F7D;&#x5668;&#x6848;&#x4F8B;" class="plugin-anchor" href="#26-&#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#x52A0;&#x8F7D;&#x5668;&#x6848;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>2.6 &#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#x52A0;&#x8F7D;&#x5668;&#x6848;&#x4F8B;</h4>
+<ol>
+<li><p>&#x65B0;&#x5EFA;&#x4E00;&#x4E2A; User.java &#x7C7B;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">User</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;****User****&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>&#x5C06;&#x7C7B; copy &#x5230;&#x76EE;&#x5F55; /Users/lishaofei/Downloads</p>
+</li>
+<li><p>&#x7F16;&#x8BD1;&#x7C7B;&#xFF1A;<code>javac User.java</code></p>
+</li>
+<li><p>&#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#x52A0;&#x8F7D;&#x5668;&#xFF0C;&#x7EE7;&#x627F;ClassLoader&#xFF0C;&#x91CD;&#x5199;findClass()&#x65B9;&#x6CD5;&#xFF0C;&#x8C03;&#x7528;defineClass()&#x65B9;&#x6CD5;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zero<span class="token punctuation">.</span>snippet<span class="token punctuation">.</span>jvm</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span><span class="token operator">*</span></span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">java<span class="token punctuation">.</span>lang<span class="token punctuation">.</span>reflect<span class="token punctuation">.</span></span><span class="token class-name">Method</span></span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * &#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#x52A0;&#x8F7D;&#x5668;&#x6848;&#x4F8B;
+ *
+ * @author lishaofei
+ * @date 2022/9/12 11:31
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MyCustomClassLoader</span> <span class="token keyword">extends</span> <span class="token class-name">ClassLoader</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">private</span> <span class="token keyword">final</span> <span class="token class-name">String</span> classpath<span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token class-name">MyCustomClassLoader</span><span class="token punctuation">(</span><span class="token class-name">String</span> classpath<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>classpath <span class="token operator">=</span> classpath<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">Exception</span> <span class="token punctuation">{</span>
+        <span class="token comment">//&#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#x52A0;&#x8F7D;&#x5668;&#x7684;&#x52A0;&#x8F7D;&#x8DEF;&#x5F84;(&#x4E8B;&#x5148;&#x5728;&#x8BE5;&#x76EE;&#x5F55;&#x4F7F;&#x7528;&#x540C;&#x7248;&#x672C; jdk &#x7F16;&#x8BD1;&#x4E00;&#x4E2A; class &#x7C7B;&#xFF0C;&#x53C2;&#x8003; model.User)</span>
+        <span class="token class-name">MyCustomClassLoader</span> myCustomClassLoader <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">MyCustomClassLoader</span><span class="token punctuation">(</span><span class="token string">&quot;/Users/lishaofei/Downloads&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// &#x7C7B;&#x5168;&#x9650;&#x5B9A;&#x540D;&#x79F0;</span>
+        <span class="token class-name">Class</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">?</span><span class="token punctuation">&gt;</span></span> c <span class="token operator">=</span> myCustomClassLoader<span class="token punctuation">.</span><span class="token function">loadClass</span><span class="token punctuation">(</span><span class="token string">&quot;User&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>c <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// &#x521B;&#x5EFA;&#x5BF9;&#x8C61;</span>
+            <span class="token class-name">Object</span> obj <span class="token operator">=</span> c<span class="token punctuation">.</span><span class="token function">newInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">// &#x83B7;&#x53D6;&#x5BF9;&#x8C61;&#x7684;&#x6307;&#x5B9A;&#x65B9;&#x6CD5;</span>
+            <span class="token class-name">Method</span> method <span class="token operator">=</span> c<span class="token punctuation">.</span><span class="token function">getMethod</span><span class="token punctuation">(</span><span class="token string">&quot;print&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token class-name">Class</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">?</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">// &#x6267;&#x884C;&#x65B9;&#x6CD5;</span>
+            method<span class="token punctuation">.</span><span class="token function">invoke</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">// &#x6253;&#x5370;&#x8BE5;&#x7C7B;&#x7684;&#x7C7B;&#x52A0;&#x8F7D;&#x5668;</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>c<span class="token punctuation">.</span><span class="token function">getClassLoader</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">// &#x6253;&#x5370;&#x5185;&#x5BB9;&#xFF1A;com.zero.snippet.jvm.MyCustomClassLoader@2f2c9b19</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">protected</span> <span class="token class-name">Class</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">?</span><span class="token punctuation">&gt;</span></span> <span class="token function">findClass</span><span class="token punctuation">(</span><span class="token class-name">String</span> name<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">ClassNotFoundException</span> <span class="token punctuation">{</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            <span class="token comment">// &#x8F93;&#x5165;&#x6D41;&#xFF0C;&#x901A;&#x8FC7;&#x7C7B;&#x7684;&#x5168;&#x9650;&#x5B9A;&#x540D;&#x79F0;&#x52A0;&#x8F7D;&#x6587;&#x4EF6;&#x5230;&#x5B57;&#x8282;&#x6570;&#x7EC4;</span>
+            <span class="token comment">// &#x5C06;&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x4E2D;&#x7684; class &#x6587;&#x4EF6;&#xFF0C;&#x4EE5;&#x5B57;&#x8282;&#x7801;&#x6D41;&#x8F93;&#x5165;&#x5185;&#x5B58;</span>
+            <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> classDate <span class="token operator">=</span> <span class="token function">getData</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>classDate <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment">//defineClass&#x65B9;&#x6CD5;&#x5C06;&#x5B57;&#x8282;&#x6570;&#x7EC4;&#x6570;&#x636E; &#x8F6C;&#x4E3A; &#x5B57;&#x8282;&#x7801;&#x5BF9;&#x8C61;</span>
+                <span class="token keyword">return</span> <span class="token function">defineClass</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> classDate<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> classDate<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">IOException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">return</span> <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">findClass</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">//&#x52A0;&#x8F7D;&#x7C7B;&#x7684;&#x5B57;&#x8282;&#x7801;&#x6570;&#x636E;</span>
+    <span class="token keyword">private</span> <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token function">getData</span><span class="token punctuation">(</span><span class="token class-name">String</span> className<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">IOException</span> <span class="token punctuation">{</span>
+        <span class="token class-name">String</span> path <span class="token operator">=</span> classpath <span class="token operator">+</span> <span class="token class-name">File</span><span class="token punctuation">.</span>separatorChar <span class="token operator">+</span>
+                className<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token char">&apos;.&apos;</span><span class="token punctuation">,</span> <span class="token class-name">File</span><span class="token punctuation">.</span>separatorChar<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&quot;.class&quot;</span><span class="token punctuation">;</span>
+        <span class="token keyword">try</span> <span class="token punctuation">(</span><span class="token class-name">InputStream</span> in <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FileInputStream</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span><span class="token punctuation">;</span>
+             <span class="token class-name">ByteArrayOutputStream</span> out <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ByteArrayOutputStream</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> buffer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token number">2048</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token keyword">int</span> len<span class="token punctuation">;</span>
+            <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>len <span class="token operator">=</span> in<span class="token punctuation">.</span><span class="token function">read</span><span class="token punctuation">(</span>buffer<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                out<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>buffer<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> len<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">return</span> out<span class="token punctuation">.</span><span class="token function">toByteArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">FileNotFoundException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li><p>&#x6267;&#x884C;&#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#x52A0;&#x8F7D;&#x5668;&#x7684; main &#x65B9;&#x6CD5;</p>
+</li>
+<li><p>&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x5982;&#x4E0B;</p>
+<pre class="language-"><code class="lang-java"><span class="token operator">*</span><span class="token operator">*</span><span class="token operator">*</span><span class="token operator">*</span><span class="token class-name">User</span><span class="token operator">*</span><span class="token operator">*</span><span class="token operator">*</span><span class="token operator">*</span>
+<span class="token class-name"><span class="token namespace">com<span class="token punctuation">.</span>zero<span class="token punctuation">.</span>snippet<span class="token punctuation">.</span>jvm<span class="token punctuation">.</span></span>MyCustomClassLoader</span><span class="token annotation punctuation">@2f2c9b19</span>
+</code></pre>
+</li>
+</ol>
+<h4 id="27-&#x53CC;&#x4EB2;&#x59D4;&#x6D3E;"><a name="27-&#x53CC;&#x4EB2;&#x59D4;&#x6D3E;" class="plugin-anchor" href="#27-&#x53CC;&#x4EB2;&#x59D4;&#x6D3E;"><i class="fa fa-link" aria-hidden="true"></i></a>2.7 &#x53CC;&#x4EB2;&#x59D4;&#x6D3E;</h4>
+<p><strong>2.7.1 &#x4EC0;&#x4E48;&#x662F;&#x53CC;&#x4EB2;&#x59D4;&#x6D3E;&#xFF1F;</strong></p>
+<p>&#x5F53;&#x4E00;&#x4E2A;&#x7C7B;&#x52A0;&#x8F7D;&#x5668;&#x6536;&#x5230;&#x7C7B;&#x52A0;&#x8F7D;&#x4EFB;&#x52A1;&#xFF0C;&#x4F1A;&#x5148;&#x4EA4;&#x7ED9;&#x5176;&#x7236;&#x7C7B;&#x52A0;&#x8F7D;&#x5668;&#x53BB;&#x5B8C;&#x6210;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x6700;&#x7EC8;&#x52A0;&#x8F7D;&#x4EFB;&#x52A1;&#x90FD;&#x4F1A;&#x4F20;&#x9012;&#x5230;&#x9876;&#x5C42;&#x7684;&#x542F;&#x52A8;&#x7C7B;&#x52A0;&#x8F7D;&#x5668;&#xFF0C;&#x53EA;&#x6709;&#x5F53;&#x7236;&#x7C7B;&#x52A0;&#x8F7D;&#x5668;&#x65E0;&#x6CD5;&#x5B8C;&#x6210;&#x52A0;&#x8F7D;&#x4EFB;&#x52A1;&#x65F6;&#xFF0C;&#x5B50;&#x7C7B;&#x624D;&#x4F1A;&#x5C1D;&#x8BD5;&#x6267;&#x884C;&#x52A0;&#x8F7D;&#x4EFB;&#x52A1;&#x3002;</p>
+<p><strong>2.7.2 &#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981;&#x53CC;&#x4EB2;&#x59D4;&#x6D3E;&#xFF1F;</strong></p>
+<p>&#x907F;&#x514D;&#x539F;&#x59CB;&#x7C7B;&#x88AB;&#x8986;&#x76D6;</p>
+<p><strong>2.7.3 &#x6253;&#x7834;&#x53CC;&#x4EB2;&#x59D4;&#x6D3E;</strong></p>
+<p>&#x5728;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x7236;&#x7C7B;&#x52A0;&#x8F7D;&#x5668;&#x9700;&#x8981;&#x52A0;&#x8F7D;&#x7684;class&#x6587;&#x4EF6;&#x53D7;&#x5230;&#x52A0;&#x8F7D;&#x8303;&#x56F4;&#x7684;&#x9650;&#x5236;&#xFF0C;&#x65E0;&#x6CD5;&#x52A0;&#x8F7D;&#x5230;&#x9700;&#x8981;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x8FD9; &#x4E2A;&#x65F6;&#x5019;&#x5C31;&#x9700;&#x8981;&#x59D4;&#x6258;&#x5B50;&#x7C7B;&#x52A0;&#x8F7D;&#x5668;&#x8FDB;&#x884C;&#x52A0;&#x8F7D;&#x3002;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x5C31;&#x6253;&#x7834;&#x4E86;&#x53CC;&#x4EB2;&#x59D4;&#x6D3E;&#x6A21;&#x5F0F;</p>
+<p><img src="assets/image-20220913102111436.png" alt="image-20220913102111436"></p>
+<p>&#x4EE5;Driver&#x63A5;&#x53E3;&#x4E3A;&#x4F8B;&#xFF0C;Driver&#x63A5;&#x53E3;&#x5B9A;&#x4E49;&#x5728;JDK&#x4E2D;&#xFF0C;&#x5176;&#x5B9E;&#x73B0;&#x7531;&#x5404;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x7684;&#x670D;&#x52A1;&#x5546;&#x6765;&#x63D0;&#x4F9B;&#xFF0C;&#x5982; MySQL&#x3001;Oracle&#x3001;SQLServer&#x7B49;&#x7B49;&#xFF0C;&#x90FD;&#x5B9E;&#x73B0;&#x4E86;&#x8BE5;&#x63A5;&#x53E3;&#xFF0C;&#x8FD9;&#x4E9B;&#x5B9E;&#x73B0;&#x7C7B;&#x90FD;&#x662F;&#x4EE5;jar&#x5305;&#x7684;&#x5F62;&#x5F0F;&#x653E;&#x5230; classpath&#x76EE;&#x5F55;&#x4E0B;&#x3002;DriverManager&#x52A0;&#x8F7D;&#x5404;&#x4E2A;&#x5B9E;&#x73B0;&#x4E86;Driver&#x63A5;&#x53E3;&#x7684;&#x5B9E;&#x73B0;&#x7C7B;(&#x5728;classpath&#x4E0B;)&#x8FDB;&#x884C; &#x7BA1;&#x7406;&#xFF0C;&#x4F46;&#x662F;DriverManager&#x7531;&#x542F;&#x52A8;&#x7C7B;&#x52A0;&#x8F7D;&#x5668;&#x52A0;&#x8F7D;&#xFF0C;&#x53EA;&#x80FD;&#x52A0;&#x8F7D;JAVA_HOME&#x7684;lib&#x4E0B;&#x6587;&#x4EF6;&#xFF0C;&#x800C;&#x5176; &#x5B9E;&#x73B0;&#x7C7B;&#x662F;&#x7531;&#x670D;&#x52A1;&#x5546;&#x63D0;&#x4F9B;&#x7684;&#xFF0C;&#x7531;&#x7CFB;&#x7EDF;&#x7C7B;&#x52A0;&#x8F7D;&#x5668;&#x52A0;&#x8F7D;&#x3002;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x542F;&#x52A8;&#x7C7B;&#x52A0;&#x8F7D;&#x5668;&#x6765; &#x59D4;&#x6258; &#x5B50; &#x7C7B;&#x6765;&#x52A0;&#x8F7D;Driver&#x5B9E;&#x73B0;&#xFF0C;&#x8FD9;&#x5C31;&#x7834;&#x574F;&#x4E86;&#x53CC;&#x4EB2;&#x59D4;&#x6D3E;&#x3002;</p>
+<p>&#x4E0E;&#x53CC;&#x4EB2;&#x59D4;&#x6D3E;&#x51B2;&#x7A81;&#x7684;&#x8FD8;&#x6709;&#xFF1A;&#x70ED;&#x52A0;&#x8F7D;&#x6280;&#x672F;&#x3001;Tomcat &#x52A0;&#x8F7D;&#x591A;&#x4E2A;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;</p>
+<h3 id="3-&#x8FD0;&#x884C;&#x65F6;&#x6570;&#x636E;&#x533A;"><a name="3-&#x8FD0;&#x884C;&#x65F6;&#x6570;&#x636E;&#x533A;" class="plugin-anchor" href="#3-&#x8FD0;&#x884C;&#x65F6;&#x6570;&#x636E;&#x533A;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x8FD0;&#x884C;&#x65F6;&#x6570;&#x636E;&#x533A;</h3>
+<h3 id="4-&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x4E00;&#x751F;"><a name="4-&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x4E00;&#x751F;" class="plugin-anchor" href="#4-&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x4E00;&#x751F;"><i class="fa fa-link" aria-hidden="true"></i></a>4. &#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x4E00;&#x751F;</h3>
+<h3 id="5-gc-&#x6536;&#x96C6;&#x5668;"><a name="5-gc-&#x6536;&#x96C6;&#x5668;" class="plugin-anchor" href="#5-gc-&#x6536;&#x96C6;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>5. GC &#x6536;&#x96C6;&#x5668;</h3>
+<h3 id="6-jvm-&#x8C03;&#x4F18;&#x5DE5;&#x5177;"><a name="6-jvm-&#x8C03;&#x4F18;&#x5DE5;&#x5177;" class="plugin-anchor" href="#6-jvm-&#x8C03;&#x4F18;&#x5DE5;&#x5177;"><i class="fa fa-link" aria-hidden="true"></i></a>6. JVM &#x8C03;&#x4F18;&#x5DE5;&#x5177;</h3>
+<h3 id="7-&#x8C03;&#x4F18;&#x5B9E;&#x6218;"><a name="7-&#x8C03;&#x4F18;&#x5B9E;&#x6218;" class="plugin-anchor" href="#7-&#x8C03;&#x4F18;&#x5B9E;&#x6218;"><i class="fa fa-link" aria-hidden="true"></i></a>7. &#x8C03;&#x4F18;&#x5B9E;&#x6218;</h3>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; zerolee 2022 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2022-09-13 10:21:57
+</span></footer>
+						
+					</section>
+					
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+				</div>
+			</div>
+			
+		</div>
+
+		
+		
+		<a href="pref.html" class="navigation navigation-prev " aria-label="Previous page: 项目性能优化 TODO">
+			<i class="fa fa-angle-left"></i>
+		</a>
+		
+		
+		<a href="concurrent.html" class="navigation navigation-next " aria-label="Next page: 多线程与并发编程 TODO">
+			<i class="fa fa-angle-right"></i>
+		</a>
+		
+		
+		
+	</div>
+	<script>
+		var gitbook = gitbook || [];
+		gitbook.push(function() {
+			gitbook.page.hasChanged({"page":{"title":"JVM 虚拟机 TODO","level":"1.2.2","depth":2,"next":{"title":"多线程与并发编程 TODO","level":"1.2.3","depth":2,"path":"markdown/01-java/concurrent.md","ref":"markdown/01-java/concurrent.md","articles":[]},"previous":{"title":"项目性能优化 TODO","level":"1.2.1","depth":2,"path":"markdown/01-java/pref.md","ref":"markdown/01-java/pref.md","articles":[]},"dir":"ltr"},"config":{"plugins":["copy-code-button","-lunr","-search","search-plus","search-pro","github","emphasize","splitter","-sharing","-highlight","tbfed-pagefooter","anchors","-livereload","simple-page-toc","prism","prism-themes","sectionx","back-to-top-button","cuav-chapters","heading-anchors","theme-fexa","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © zerolee 2022","modify_label":"修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"emphasize":{},"github":{"url":"https://github.com/zerolee1993/geektime-senior-java-engineer"},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"splitter":{},"search-pro":{},"sytles":{"website":"styles/website.css"},"cuav-chapters":{"summaryMaxSize":20,"useLimitExpanded":false},"theme-fexa":{"search-placeholder":"你想搜啥？","logo":"assets/images/logo.png","favicon":"assets/images/favicon.ico"},"fontsettings":{"theme":"white","family":"sans","size":1},"sectionx":{"tag":"b"},"heading-anchors":{},"back-to-top-button":{},"prism-themes":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"search-plus":{}},"theme":"default","author":"lishaofei","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"极客时间Java高级工程师体系课笔记","language":"zh-hans","output.name":"site","gitbook":"3.2.3","description":"极客时间Java高级工程师体系课笔记"},"file":{"path":"markdown/01-java/jvm.md","mtime":"2022-09-13T02:21:57.476Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-19T13:05:47.165Z"},"basePath":"../..","book":{"language":""}});
+		});
+	</script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-cuav-chapters/cuav-chapters.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-fexa/fexa.js"></script>
+        
+    
+
+    </body>
+</html>
+
