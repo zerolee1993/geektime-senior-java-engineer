@@ -27,8 +27,7 @@
         "back-to-top-button",
         "cuav-chapters",
         "heading-anchors",
-        "theme-fexa",
-        "disqus"
+        "theme-fexa"
     ],
 
     "pluginsConfig": {
@@ -41,7 +40,7 @@
             "size": 1
         },
         "github": {
-            "url": "https://github.com/zerolee1993/mysql-guide"
+            "url": "https://github.com/zerolee1993/geektime-senior-java-engineer"
         },
         "prism": {
             "css": [
@@ -52,7 +51,7 @@
             "showLevel": true
         },
         "tbfed-pagefooter": {
-            "copyright": "Copyright © zerolee 2019",
+            "copyright": "Copyright © zerolee 2022",
             "modify_label": "修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
@@ -67,9 +66,6 @@
             "search-placeholder":"你想搜啥？",
             "logo":"assets/images/logo.png",
             "favicon": "assets/images/favicon.ico"
-        },
-        "disqus": {
-            "shortName": "zeroLee"
         }
     }
 }
