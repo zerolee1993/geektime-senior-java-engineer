@@ -48,7 +48,7 @@
             ]
         },
         "theme-default": {
-            "showLevel": true
+            "showLevel": false
         },
         "tbfed-pagefooter": {
             "copyright": "Copyright © zerolee 2022",
