@@ -9,6 +9,11 @@
     "structure": {
         "readme": "README.md"
     },
+    "links" : {
+        "sidebar" : {
+            "Home" : "https://www.baidu.com"
+        }
+    },
     "plugins": [
         "copy-code-button",
         "-lunr", "-search", "search-plus", "search-pro",
@@ -27,9 +32,10 @@
         "back-to-top-button",
         "cuav-chapters",
         "heading-anchors",
-        "theme-fexa"
+        "theme-fexa",
+        "popup",
+        "pageview-count"
     ],
-
     "pluginsConfig": {
         "sytles": {
             "website": "styles/website.css"
@@ -66,6 +72,10 @@
             "search-placeholder":"你想搜啥？",
             "logo":"assets/images/logo.png",
             "favicon": "assets/images/favicon.ico"
+        },
+        "insert-logo": {
+            "url": "assets/images/logo.png",
+            "sytle": "background: none; max-hight: 30px; min-height: 30px"
         }
     }
 }
