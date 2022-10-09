@@ -200,7 +200,7 @@ passwd mysql
 usermod -aG wheel mysql
 
 
-#5. 使用 mysql 账号启动
+#5. 使 用 mysql 账号启动
 su - mysql
 service mysqld start
 

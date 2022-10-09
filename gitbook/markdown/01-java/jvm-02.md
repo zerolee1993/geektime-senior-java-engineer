@@ -1,4 +1,4 @@
-### 2.1 类加载的时机
+# 2.1 类加载的时机
 
 1. 遇到 new、getstatic、putstatic 和 invokestatic 这四条指令时，如果对应的类没有初始化，则要对对应的类先进行初始化
 
@@ -20,7 +20,7 @@
 3. 初始化一个类的时候发现其父类还没初始化，要先初始化其父类
 4. 当虚拟机开始启动时，用户需要指定一个主类(main)，虚拟机会先执行这个主类的初始化
 
-### 2.2 类加载的过程	
+# 2.2 类加载的过程
 
 <img src="assets/image-20220927190910176.png" alt="image-20220927190910176" style="zoom:50%;" />	
 
@@ -43,7 +43,7 @@
 
    <img src="assets/image-20220927191028220.png" alt="image-20220927191028220" style="zoom: 50%;"/>
 
-### 2.3 类加载器
+# 2.3 类加载器
 
 <img src="assets/image-20220927191715575.png" alt="image-20220927191715575" style="zoom:50%;" />
 
@@ -165,7 +165,7 @@
    com.zero.snippet.jvm.MyCustomClassLoader@3b81a1bc
    ```
 
-### 2.4 类加载的机制
+# 2.4 类加载的机制
 
 <img src="assets/image-20220927191920128.png" alt="image-20220927191920128" style="zoom:50%;" />	
 

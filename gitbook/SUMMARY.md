@@ -8,7 +8,7 @@
   * [网络编程 TODO](markdown/00-homework/socket-task.md)
 * [一、Java 进阶必备技术栈]()
   * [项目性能优化](markdown/01-java/pref.md)
-  * [JVM 虚拟机](markdown/01-java/jvm.md)
+  * [JVM 虚拟机]()
     * [1.JVM 基本常识](markdown/01-java/jvm-01.md)
     * [2.类加载子系统](markdown/01-java/jvm-02.md)
     * [3.运行时数据区](markdown/01-java/jvm-03.md)
