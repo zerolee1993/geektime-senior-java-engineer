@@ -1,0 +1,13 @@
+server:
+  port: 9001
+spring:
+  thymeleaf:
+    cache: false
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hero_all?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    username: root
+    password: root
+
+# Tomcat的maxConnections、maxThreads、acceptCount三大配置，分别表示最大连接数，最大线程数、最大的等待数，可以通过application.yml配置文件来改变这个三个值，一个标准的示例如下：
+server.tomcat.uri-encoding: UTF-8
