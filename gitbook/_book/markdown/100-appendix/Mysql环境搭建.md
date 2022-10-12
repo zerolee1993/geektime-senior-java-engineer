@@ -2,8 +2,6 @@
 >
 > MySQL: 5.7
 
-
-
 ```
 # 查看已安装的 MySQL
 rpm -qa|grep mysql
